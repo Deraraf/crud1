@@ -5,7 +5,7 @@ import EditTopicForm from "../../../components/EditTopicForm"
     cache:"no-store"
   })
  if(!res.ok){
-  throw new Error('faild to fetch topics')
+  throw new Error('faild to fetch topic')
  }
 
  return res.json()

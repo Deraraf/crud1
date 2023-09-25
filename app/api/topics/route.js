@@ -1,6 +1,6 @@
 import connectMongoDB from "../../../lib/mongodb"
 import { NextResponse } from "next/server"
-import Topic from "@/models/Topic"
+import Topic from "../../../models/Topic"
 
 export async function POST(request){
            const {title,description} = await request.json()

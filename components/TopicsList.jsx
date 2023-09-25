@@ -4,8 +4,9 @@ import { HiPencilAlt } from "react-icons/hi"
 import Link from 'next/link'
 
 const getTopic = async() =>{
+  const apiUrl = process.env.API_URL
     try {
-     const res = await fetch("http://localhost:3000/api/topics",{cache:'no-store'})
+     const res = await fetch(`${apiUrl}/api/topics`,{cache:'no-store'})
      if(!res.ok){
       throw new Error("faild to fetch topics")
      }
